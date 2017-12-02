@@ -8,6 +8,7 @@ pipeline {
           }
           stage("Unit test") {
                steps {
+					sh 'chmod +x mvnw'
                     sh "./mvnw test"
                }
           }
